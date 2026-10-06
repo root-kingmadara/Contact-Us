@@ -499,3 +499,50 @@ textarea{min-height:124px;resize:vertical}
 .btn-ghost-navy{border-color:rgba(10,44,85,.3);color:var(--navy);background:#fff}
 .btn-ghost-navy:hover{border-color:var(--navy);background:var(--bg-2)}
 @media (max-width:980px){.ct-split{grid-template-columns:1fr}.ct-side{position:static}.ctcards ul{grid-template-columns:1fr}}
+
+/* contact: details rows, join form, FAQ */
+.ct-split{grid-template-columns:1fr 1fr;gap:44px}
+.ct-side{display:grid;gap:30px;position:static}
+.ct-rows{background:#fff;border:1px solid var(--line);border-radius:16px;padding:6px 28px;box-shadow:var(--shadow);margin:0}
+.ct-rows > div{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+.ct-rows > div:last-child{border-bottom:0}
+.ct-rows dt{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green-d);padding-top:4px}
+.ct-rows dd{margin:0;display:flex;flex-direction:column;gap:2px}
+.ct-rows a,.ct-rows span{color:var(--navy);font-weight:500;font-size:1.02rem;line-height:1.55;transition:color .2s}
+.ct-rows a:hover{color:var(--blue)}
+.joinbox{background:linear-gradient(160deg,#0a2c55,#0b4a86);border-radius:18px;padding:30px 28px 28px;box-shadow:var(--shadow)}
+.joinbox h2{color:#fff;font-size:clamp(1.6rem,2.6vw,2.1rem);margin-bottom:18px}
+.joinbox form{background:none;border:0;box-shadow:none;padding:0}
+.joinbox label{color:rgba(255,255,255,.88)}
+.joinbox input,.joinbox select,.joinbox textarea{background:rgba(255,255,255,.96);border-color:transparent}
+.joinbox textarea{min-height:100px}
+.joinbox .note{color:rgba(255,255,255,.8)}
+.joinbox .note a{color:var(--sun);text-decoration:underline}
+.ct-formwrap form{position:sticky;top:100px}
+
+.faq{background:linear-gradient(180deg,var(--bg),var(--bg-2));border-top:1px solid var(--line)}
+.faq-head{margin-bottom:34px}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:14px}
+.qa{background:#fff;border:1px solid var(--line);border-radius:14px;transition:box-shadow .3s,border-color .3s}
+.qa[open]{border-color:rgba(11,99,176,.35);box-shadow:0 22px 44px -28px rgba(10,44,85,.55)}
+.qa summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 24px;font-weight:700;color:var(--navy);font-size:1.04rem;line-height:1.4}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary i{flex:none;position:relative;width:30px;height:30px;border-radius:50%;background:var(--bg-2);transition:background .3s,transform .35s var(--ease)}
+.qa summary i::before,.qa summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:var(--navy);transition:transform .35s var(--ease),background .3s}
+.qa summary i::after{transform:rotate(90deg)}
+.qa[open] summary i{background:var(--sun)}
+.qa[open] summary i::after{transform:rotate(0)}
+.qa:hover summary i{background:var(--sun)}
+.qa .ans{padding:0 24px 22px}
+.qa .ans p{font-size:.98rem;line-height:1.7;max-width:none}
+.qa .ans a{color:var(--blue);font-weight:600}
+.qa .ans a:hover{text-decoration:underline}
+.qa .ans b{color:var(--navy)}
+
+@media (max-width:980px){.ct-split{grid-template-columns:1fr}.ct-formwrap form{position:static}}
+@media (max-width:620px){
+  .ct-rows{padding:4px 18px}
+  .ct-rows > div{grid-template-columns:1fr;gap:6px;padding:16px 0}
+  .joinbox{padding:24px 18px}
+  .qa summary{padding:16px 16px}.qa .ans{padding:0 16px 18px}
+}

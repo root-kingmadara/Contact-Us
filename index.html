@@ -46,32 +46,22 @@
     <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C240 100 480 0 720 40 C960 80 1200 10 1440 50 V90 H0Z" fill="#f5f9fd"/><path d="M0 62 C260 20 520 96 800 56 C1040 24 1250 70 1440 40 V90 H0Z" fill="#f5f9fd" opacity=".6"/></svg>
   </section>
 
-  <section class="ctcards" aria-label="Ways to reach us">
-    <div class="wrap">
-      <ul>
-        <li class="rise"><div class="ci"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div><h3>Call Us</h3><a href="tel:+919039593377">+91 90395 93377</a><a href="tel:+918758018658">+91 87580 18658</a></li>
-        <li class="rise"><div class="ci"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></div><h3>Email Us</h3><a href="mailto:info@vlsengineers.com">info@vlsengineers.com</a><a href="mailto:vlsengineers2023@gmail.com">vlsengineers2023@gmail.com</a></li>
-        <li class="rise"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Registered Office</h3><a href="https://www.google.com/maps/search/?api=1&amp;query=1127%2F1A%2C+Durga+Colony%2C+Sanjeevani+Nagar%2C+Shahi+Naka%2C+Garha%2C+Jabalpur" target="_blank" rel="noopener">1127/1A, Durga Colony, Sanjeevani Nagar, Shahi Naka, Garha, Jabalpur (M.P.) India 482003</a></li>
-      </ul>
-    </div>
-  </section>
-
   <section class="ctmain">
     <div class="wrap">
       <div class="ct-split">
         <div class="ct-formwrap">
           <h2>Send an Enquiry</h2>
-          <form id="enquiry" data-wa="919039593377" class="rise">
+          <form id="enquiry" data-wa="919039593377" data-title="New enquiry from vlsengineers.com" class="rise">
           <div class="pair">
-            <label>Your Name<input name="cname" required autocomplete="name" placeholder="Full name"></label>
-            <label>Organisation<input name="org" autocomplete="organization" placeholder="Company or department"></label>
+            <label>Your Name<input name="cname" data-label="Name" required autocomplete="name" placeholder="Full name"></label>
+            <label>Organisation<input name="org" data-label="Organisation" autocomplete="organization" placeholder="Company or department"></label>
           </div>
           <div class="pair">
-            <label>Phone<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="Mobile number"></label>
-            <label>Email<input name="email" type="email" autocomplete="email" placeholder="you@organisation.com"></label>
+            <label>Phone<input name="phone" data-label="Phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="Mobile number"></label>
+            <label>Email<input name="email" data-label="Email" type="email" autocomplete="email" placeholder="you@organisation.com"></label>
           </div>
           <label>Service Required
-            <select name="service">
+            <select name="service" data-label="Service">
               <option>Business Development</option>
               <option>Pre-Bid Engineering</option>
               <option>Project Management</option>
@@ -87,18 +77,105 @@
               <option>Something else</option>
             </select>
           </label>
-          <label>Project Details<textarea name="details" placeholder="Type of project, location, approximate value and current stage"></textarea></label>
+          <label>Project Details<textarea name="details" data-label="Details" placeholder="Type of project, location, approximate value and current stage"></textarea></label>
           <button class="btn btn-navy" type="submit">Send Enquiry</button>
           <p class="note">Your Details Open in WhatsApp, Ready to Send.</p>
         </form>
         </div>
-        <aside class="ct-side rise">
-          <div class="mapbox">
-            <iframe title="VLS Engineers registered office on the map" src="https://www.google.com/maps?q=1127%2F1A%2C+Durga+Colony%2C+Sanjeevani+Nagar%2C+Shahi+Naka%2C+Garha%2C+Jabalpur&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <aside class="ct-side">
+          <dl class="ct-rows rise">
+            <div><dt>Telephone</dt><dd><a href="tel:+919039593377">+91 90395 93377</a><a href="tel:+918758018658">+91 87580 18658</a></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/919039593377" target="_blank" rel="noopener">Message us directly</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:info@vlsengineers.com">info@vlsengineers.com</a><a href="mailto:vlsengineers2023@gmail.com">vlsengineers2023@gmail.com</a></dd></div>
+            <div><dt>Registered Office</dt><dd><span>VLS Engineers<br>1127/1A, Durga Colony, Sanjeevani Nagar,<br>Shahi Naka, Garha, Jabalpur (M.P.)<br>India 482003</span></dd></div>
+            <div><dt>Markets Served</dt><dd><span>Currently serving across the globe</span></dd></div>
+          </dl>
+
+          <div class="joinbox rise" id="join">
+            <h2>Join Our Team</h2>
+            <form id="join-form" data-wa="919039593377" data-title="New job application from vlsengineers.com">
+              <div class="pair">
+                <label>Full Name<input name="jname" data-label="Name" required autocomplete="name" placeholder="Your name"></label>
+                <label>Phone<input name="jphone" data-label="Phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="Mobile number"></label>
+              </div>
+              <div class="pair">
+                <label>Email<input name="jemail" data-label="Email" type="email" autocomplete="email" placeholder="you@email.com"></label>
+                <label>Years of Experience<input name="jexp" data-label="Experience" inputmode="numeric" placeholder="For example, 5"></label>
+              </div>
+              <label>Area of Expertise
+                <select name="jarea" data-label="Area of expertise">
+                  <option>Civil and Structural Design</option>
+                  <option>Hydraulic and Process Design</option>
+                  <option>Survey and GIS</option>
+                  <option>Contracts and Procurement</option>
+                  <option>Business Development</option>
+                  <option>Project Management and Site Supervision</option>
+                  <option>Estimation and Quality Control</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+              <label>Qualification<input name="jqual" data-label="Qualification" placeholder="For example, B.Tech Civil"></label>
+              <label>About You<textarea name="jmsg" data-label="About" placeholder="A few lines about your experience and the projects you have worked on"></textarea></label>
+              <button class="btn btn-navy" type="submit">Apply on WhatsApp</button>
+              <p class="note">Your details open in WhatsApp, ready to send. Please share your CV there or email it to <a href="mailto:info@vlsengineers.com">info@vlsengineers.com</a>.</p>
+            </form>
           </div>
-          <a class="btn btn-wa" href="https://wa.me/919039593377" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Chat on WhatsApp</a>
-          <a class="btn btn-ghost-navy" href="https://www.google.com/maps/search/?api=1&amp;query=1127%2F1A%2C+Durga+Colony%2C+Sanjeevani+Nagar%2C+Shahi+Naka%2C+Garha%2C+Jabalpur" target="_blank" rel="noopener">Open in Google Maps</a>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head center">
+        <p class="eye">Common Questions</p>
+        <h2>Before You Write to Us</h2>
+      </div>
+      <div class="faq-list">
+        <details class="qa rise" open>
+          <summary><span>What do you need to give us a proposal?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>The project type and location, approximate value, current stage, and the scope you want covered. Drawings, tender documents or a DPR extract help, but are not essential for a first discussion.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Can we engage you for only part of a project?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Yes. Each of our services can be engaged individually. A survey, a DPR, a structural design package, a pre-bid estimate or a TPI assignment can each be taken on its own, and the scope can be extended later if the project needs it.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Do you support contractors at the bidding stage?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>That is one of our core areas. We prepare pre-bid design, quantity take-off, rate analysis and cost estimation, along with technical and commercial bid documentation, so the bid is competitive without being undeliverable at the price offered.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Can you review a design or estimate that is already prepared?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Yes. We carry out proof checking, design review and value engineering on designs prepared by others, and we review estimates and bills of quantities for accuracy and cost efficiency. This is useful before a tender goes out or when a project is over budget.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Do you support site execution as well as design?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Yes. Beyond design, we provide site supervision, quality control, third-party inspection and project management, so the work on site matches the design and the contract.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Which sectors do you work in?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Water supply, water and wastewater treatment, irrigation, dams and barrages, roads and bridges, railways, buildings and industrial plants. Our <a href="services.html">Sectors page</a> describes our work in each.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Do you work outside Madhya Pradesh?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Yes. We support projects across all states of India, and we have delivered assignments in Madhya Pradesh, Chhattisgarh, Odisha and Rajasthan. Internationally, we have worked in Cambodia, LAO-PDR and Ghana, and we serve clients across key global markets including Vietnam, Timor-Leste, Africa and the Middle East.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Can you take on international assignments?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Yes. We have completed business development and project management mandates on water supply programmes in Cambodia, LAO-PDR and Ghana, covering tender and bid management, liaison, technical documentation, project analysis, costing and vendor management.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>Do you work under FIDIC contracts?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Yes. Our team manages compliance and contract administration under FIDIC and other international contractual frameworks, including claims, time extension applications and contractual correspondence.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>How do you handle confidentiality?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>We treat client drawings, tender documents and commercial information as confidential, and we can sign a non-disclosure agreement before any documents are shared.</p></div>
+        </details>
+        <details class="qa rise">
+          <summary><span>How quickly can we get started?</span><i aria-hidden="true"></i></summary>
+          <div class="ans"><p>Once we understand the scope, we confirm the timeline and team in our proposal. Share your project details through the contact form or by email and we will respond with next steps. You can also call us directly.<br><b>Phone:</b> <a href="tel:+919039593377">+91 9039593377</a> / <a href="tel:+918758018658">+91 8758018658</a><br><b>Email:</b> <a href="mailto:info@vlsengineers.com">info@vlsengineers.com</a> | <a href="mailto:vlsengineers2023@gmail.com">vlsengineers2023@gmail.com</a></p></div>
+        </details>
       </div>
     </div>
   </section>

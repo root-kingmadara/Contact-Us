@@ -104,22 +104,18 @@
 var yr = document.getElementById('yr');
 if (yr) yr.textContent = new Date().getFullYear();
 
-// ---------- enquiry form to WhatsApp ----------
-var form = document.getElementById('enquiry');
-if (form) {
+// ---------- forms to WhatsApp ----------
+document.querySelectorAll('form[data-wa]').forEach(function (form) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var f = e.target;
-    var msg = 'New enquiry from vlsengineers.com\n' +
-      'Name: ' + f.cname.value + '\n' +
-      'Organisation: ' + (f.org.value || '-') + '\n' +
-      'Phone: ' + f.phone.value + '\n' +
-      'Email: ' + (f.email.value || '-') + '\n' +
-      'Service: ' + f.service.value + '\n' +
-      'Details: ' + (f.details.value || '-');
-    window.open('https://wa.me/' + form.dataset.wa + '?text=' + encodeURIComponent(msg), '_blank');
+    var lines = [form.getAttribute('data-title') || 'New message'];
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || !el.getAttribute('data-label')) return;
+      lines.push(el.getAttribute('data-label') + ': ' + (el.value || '-'));
+    });
+    window.open('https://wa.me/' + form.dataset.wa + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
   });
-}
+});
 
 // ---------- header: compact once scrolled ----------
 (function () {
