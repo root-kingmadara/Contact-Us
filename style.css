@@ -546,3 +546,19 @@ textarea{min-height:124px;resize:vertical}
   .joinbox{padding:24px 18px}
   .qa summary{padding:16px 16px}.qa .ans{padding:0 16px 18px}
 }
+
+/* contact: photo banner and enquiry intro */
+.pghero.photo{background:var(--bg);color:var(--navy);padding:clamp(90px,12vw,170px) 0 clamp(110px,13vw,190px)}
+.pghero.photo .pgbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center;z-index:0}
+.pghero.photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(245,249,253,.88) 0%,rgba(245,249,253,.55) 32%,rgba(245,249,253,.1) 55%,transparent 70%),linear-gradient(0deg,rgba(245,249,253,.55) 0%,transparent 14%)}
+.pghero.photo h1{color:var(--navy);text-shadow:0 0 22px rgba(245,249,253,.85),0 0 4px rgba(245,249,253,.7)}
+.pghero.photo h1 em{background:linear-gradient(90deg,var(--blue),#1b8fe8,var(--blue));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pghero.photo .eye{color:var(--green-d)}
+.pghero.photo .eye::before{background:var(--green-d)}
+.ct-formwrap .intro{margin:-4px 0 20px;max-width:52ch}
+.ct-formwrap .note a{color:var(--blue);font-weight:600}
+@media (max-width:760px){
+  .pghero.photo{padding:clamp(70px,22vw,120px) 0 90px}
+  .pghero.photo::before{background:linear-gradient(0deg,rgba(245,249,253,.5),rgba(245,249,253,.7))}
+}
+.pghero.photo h1 em{background:none;-webkit-text-fill-color:#0b63b0;color:#0b63b0;animation:none;text-shadow:0 0 18px rgba(245,249,253,.9)}
